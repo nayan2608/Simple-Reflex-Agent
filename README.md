@@ -20,7 +20,7 @@ source .venv/bin/activate
 uv pip install matplotlib
 ```
 
-# Run
+ Run
 ```bash
 python reflex_agent.py
 ```
