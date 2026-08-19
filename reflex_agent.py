@@ -33,6 +33,7 @@ room_positions = {
 # Get the list of room names.
 # The agent will use the index to determine its current room.
 rooms = list(environment.keys())  
+
 # Initially, the agent starts in Room1.
 agent_index = 0  
 
@@ -51,8 +52,6 @@ def reflex_agent(state):
     else:
         return "Move"
         
-        
-
 # ============================================================
 # 4. DRAW THE ENVIRONMENT
 # ============================================================
@@ -102,7 +101,8 @@ def draw_environment(env, agent_pos, step):
 # ============================================================
 
 # Turn on interactive plotting.
-# This allows the environment to update step by step.plt.ion()  
+# This allows the environment to update step by step.
+plt.ion()  
 steps = 8  
 
 # Run the simulation for the specified number of steps.
